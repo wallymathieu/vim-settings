@@ -1,0 +1,3 @@
+rm ~/.vim
+rm ~/.vimrc
+
