@@ -7,10 +7,15 @@ set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
 
 set backspace=indent,eol,start    " Intuitive backspacing.
-call pathogen#infect()
+
+call pathogen#infect()            " start pathogen
+
 filetype plugin indent on
 
 set expandtab
 set shiftwidth=2
 set softtabstop=2
 set ts=2                          " Tab size 2
+" Nerd tree:
+map <F2> :NERDTreeToggle<CR>
+
