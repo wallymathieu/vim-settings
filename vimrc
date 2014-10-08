@@ -18,4 +18,12 @@ set softtabstop=2
 set ts=2                          " Tab size 2
 " Nerd tree:
 map <F2> :NERDTreeToggle<CR>
+set relativenumber 
+
+" Line numbers
+autocmd FocusLost * :set number
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
+autocmd CursorMoved * :set relativenumber
+
 
