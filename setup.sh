@@ -1,5 +1,15 @@
 
-ln -s ~/vim-settings/vim ~/.vim
-ln -s ~/vim-settings/vimrc ~/.vimrc
+if [ ! -e ~/.vim ]
+then
+  ln -s ~/vim-settings/vim ~/.vim
+fi
 
-ln -s ~/vim-settings/vim-pathogen/autoload/pathogen.vim ~/vim-settings/vim/autoload/pathogen.vim
+if [ ! -e ~/.vimrc ]
+then
+  ln -s ~/vim-settings/vimrc ~/.vimrc
+fi
+
+if [ ! -e ~/vim-settings/vim/autoload/pathogen.vim ]
+then
+  ln -s ~/vim-settings/vim-pathogen/autoload/pathogen.vim ~/vim-settings/vim/autoload/pathogen.vim
+fi
