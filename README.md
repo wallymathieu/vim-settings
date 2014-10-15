@@ -1,4 +1,4 @@
 vim-settings
 ============
 
-My vim settings on *nix systems.
+My vim settings.
