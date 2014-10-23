@@ -1,5 +1,9 @@
-set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
-set showmode                      " Display the mode you're in "Display the mode you're in.
+if has("win32") " Keep swap files in one location
+  set directory=$HOME/_vim/tmp//    
+else
+  set directory=~/.vim/tmp//    
+endif
+set showmode                      " Display the mode you're in.
 set expandtab                     " Use spaces instead of tabs
 colorscheme vibrantink 
 syntax on
@@ -16,6 +20,10 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set ts=2                          " Tab size 2
+if has("win32")
+  let g:ruby_path = ':C:\ruby193\bin'
+  let g:FindFileIgnore = ['*.o', '*.pyc', '*/tmp/*', '*.dll', '*.exe', '*.png']
+endif 
 " Nerd tree:
 map <F2> :NERDTreeToggle<CR>
 set relativenumber 

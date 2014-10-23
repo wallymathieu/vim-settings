@@ -1,7 +1,7 @@
 
 cp -r vim $Home\_vim
 
-cp _vimrc $Home\_vimrc
+cp vimrc $Home\_vimrc
 
 cp -r . $Home\vim-settings
 
