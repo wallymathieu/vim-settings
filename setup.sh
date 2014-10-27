@@ -1,15 +1,20 @@
-
+cwd=$(pwd)
 if [ ! -e ~/.vim ]
 then
-  ln -s ~/vim-settings/vim ~/.vim
+  ln -s $cwd/vim ~/.vim
 fi
 
 if [ ! -e ~/.vimrc ]
 then
-  ln -s ~/vim-settings/vimrc ~/.vimrc
+  ln -s $cwd/vimrc ~/.vimrc
+fi
+
+if [ ! -e ~/vim-settings ]
+then
+  ln -s $cwd ~/vim-settings
 fi
 
 if [ ! -e ~/vim-settings/vim/autoload/pathogen.vim ]
 then
-  ln -s ~/vim-settings/vim-pathogen/autoload/pathogen.vim ~/vim-settings/vim/autoload/pathogen.vim
+  ln -s $cwd/vim-pathogen/autoload/pathogen.vim ~/vim-settings/vim/autoload/pathogen.vim
 fi
