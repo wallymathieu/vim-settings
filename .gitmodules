@@ -7,3 +7,12 @@
 [submodule "vim/bundle/omnisharp"]
 	path = vim/bundle/omnisharp
 	url = https://github.com/nosami/Omnisharp.git
+[submodule "vim/bundle/vim-dispatch"]
+	path = vim/bundle/vim-dispatch
+	url = git://github.com/tpope/vim-dispatch.git
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/bundle/vim-csharp"]
+	path = vim/bundle/vim-csharp
+	url = git://github.com/OrangeT/vim-csharp.git

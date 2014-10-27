@@ -1,4 +1,10 @@
 cwd=$(pwd)
+
+if [ ! -e ~/.vim/tmp ]
+then
+  mkdir ~/.vim/tmp
+fi
+
 if [ ! -e ~/.vim ]
 then
   ln -s $cwd/vim ~/.vim
