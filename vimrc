@@ -34,5 +34,8 @@ autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 autocmd CursorMoved * :set relativenumber
 
-source ~/.vim/omnisharp.vim
-
+if has("win32") 
+  source ~/_vim/omnisharp.vim
+else
+  source ~/.vim/omnisharp.vim
+end
