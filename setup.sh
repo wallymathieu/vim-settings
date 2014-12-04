@@ -15,11 +15,6 @@ then
   ln -s $cwd/vimrc ~/.vimrc
 fi
 
-if [ ! -e ~/vim-settings ]
-then
-  ln -s $cwd ~/vim-settings
-fi
-
 if [ ! -e ~/vim-settings/vim/autoload/pathogen.vim ]
 then
   ln -s $cwd/vim-pathogen/autoload/pathogen.vim ~/vim-settings/vim/autoload/pathogen.vim
