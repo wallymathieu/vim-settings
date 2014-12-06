@@ -1,5 +1,15 @@
-if has("win32") " Keep swap files in one location
-  set directory=$HOME/_vim/tmp//    
+silent function! WINDOWS()
+    return  (has('win16') || has('win32') || has('win64'))
+endfunction
+
+" On Windows, also use '.vim' instead of 'vimfiles'; this makes synchronization
+" across (heterogeneous) systems easier.
+if WINDOWS()
+  set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME
+endif
+
+if WINDOWS() " Keep swap files in one location
+  set directory=$HOME/.vim/tmp//    
 else
   set directory=~/.vim/tmp//    
 endif
@@ -20,8 +30,8 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set ts=2                          " Tab size 2
-if has("win32")
-  let g:ruby_path = ':C:\ruby193\bin'
+if WINDOWS()
+  let g:ruby_path = ':C:\tools\ruby213\bin'
   let g:FindFileIgnore = ['*.o', '*.pyc', '*/tmp/*', '*.dll', '*.exe', '*.png']
 endif 
 " Nerd tree:
@@ -34,8 +44,9 @@ autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 autocmd CursorMoved * :set relativenumber
 
-if has("win32") 
-  source ~/_vim/omnisharp.vim
+if WINDOWS() 
+  source $HOME/.vim/omnisharp.vim
 else
   source ~/.vim/omnisharp.vim
 end
+
