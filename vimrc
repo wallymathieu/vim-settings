@@ -15,7 +15,9 @@ else
 endif
 set showmode                      " Display the mode you're in.
 set expandtab                     " Use spaces instead of tabs
-colorscheme vibrantink 
+if ! WINDOWS()
+  colorscheme vibrantink 
+endif
 syntax on
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
