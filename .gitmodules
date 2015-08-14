@@ -25,3 +25,6 @@
 [submodule "vim/bundle/typescript-vim"]
 	path = vim/bundle/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "vim/bundle/vim-fsharp"]
+	path = vim/bundle/vim-fsharp
+	url = git@github.com:fsharp/vim-fsharp.git
