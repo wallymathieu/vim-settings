@@ -28,3 +28,6 @@
 [submodule "vim/bundle/vim-fsharp"]
 	path = vim/bundle/vim-fsharp
 	url = git@github.com:fsharp/vim-fsharp.git
+[submodule "vim/bundle/editorconfig"]
+	path = vim/bundle/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
