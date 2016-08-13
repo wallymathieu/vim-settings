@@ -28,3 +28,6 @@
 [submodule "vim/bundle/neco-ghc"]
 	path = vim/bundle/neco-ghc
 	url = git@github.com:eagletmt/neco-ghc.git
+[submodule "vim/bundle/ctrlp"]
+	path = vim/bundle/ctrlp
+	url = https://github.com/ctrlpvim/ctrlp.vim
