@@ -21,12 +21,13 @@ then
 fi
 
 cd ~/.vim/bundle/omnisharp/server
-xbuild
+msbuild
 
 cd ~/.vim/bundle/omnisharp/omnisharp-roslyn
 ./build.sh
 
 cd $cwd/fsharpbinding/vim
 make install
+./install
 
 cd $cwd
