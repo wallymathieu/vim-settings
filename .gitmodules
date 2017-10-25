@@ -6,7 +6,7 @@
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/bundle/omnisharp"]
 	path = vim/bundle/omnisharp
-	url = https://github.com/nosami/Omnisharp.git
+	url = git@github.com:wallymathieu/omnisharp-vim.git
 [submodule "vim/bundle/vim-dispatch"]
 	path = vim/bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
