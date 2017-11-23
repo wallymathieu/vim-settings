@@ -13,10 +13,15 @@ if WINDOWS() " Keep swap files in one location
 else
   set directory=~/.vim/tmp//    
 endif
+
+
+
 set showmode                      " Display the mode you're in.
 set expandtab                     " Use spaces instead of tabs
 if ! WINDOWS()
   colorscheme vibrantink 
+  let g:fsharp_xbuild_path = "/Library/Frameworks/Mono.framework/Versions/Current/Commands/msbuild"
+
 endif
 syntax on
 set showcmd                       " Display incomplete commands.
