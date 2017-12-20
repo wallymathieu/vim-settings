@@ -33,6 +33,9 @@ call pathogen#infect()            " start pathogen
 
 filetype plugin indent on
 
+set ffs=unix,dos
+set ff=unix                       " Line endings!
+
 set expandtab
 set shiftwidth=2
 set softtabstop=2
