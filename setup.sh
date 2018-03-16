@@ -26,8 +26,7 @@ msbuild
 cd ~/.vim/bundle/omnisharp/omnisharp-roslyn
 ./build.sh
 
-cd $cwd/fsharpbinding/vim
-make install
-./install
+cd $cwd/vim/bundle/vim-fsharp
+make
 
 cd $cwd
