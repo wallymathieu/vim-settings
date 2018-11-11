@@ -48,12 +48,11 @@ autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 autocmd CursorMoved * :set relativenumber
 
-" if WINDOWS() 
-"  source $HOME/.vim/omnisharp.vim
-"else
-"  source ~/.vim/omnisharp.vim
-"end
+if WINDOWS()
+call plug#begin('~/vimfiles/plugged')
+else
 call plug#begin('~/.vim/plugged')
+end
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'editorconfig/editorconfig-vim'
@@ -66,7 +65,4 @@ call plug#end()
 
 " Nerd tree:
 map <F2> :NERDTreeToggle<CR>
-" Disable haskell-vim omnifunc
-let g:haskellmode_completion_ghc = 0
-autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
