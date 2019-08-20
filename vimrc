@@ -54,12 +54,15 @@ else
 call plug#begin('~/.vim/plugged')
 end
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'OmniSharp/omnisharp-vim'
+" Plug 'OmniSharp/omnisharp-vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
+
+" (Optional) Multi-entry selection UI.
+Plug 'junegunn/fzf'
 Plug 'ionide/Ionide-vim', {
       \ 'do':  'make fsautocomplete',
       \}
