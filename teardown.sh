@@ -14,7 +14,3 @@ then
   rm ~/vim-settings
 fi
 
-if [ -h ~/vim-settings/vim/autoload/pathogen.vim ]
-then
-  rm ~/vim-settings/vim/autoload/pathogen.vim
-fi
