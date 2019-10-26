@@ -8,6 +8,5 @@ call mklink "%HOME%\_vimrc" "%APP_DIR%\vimrc"
 
 call mklink /J "%HOME%\.vim" "%APP_DIR%\vim"
 
-call mklink "%APP_DIR%\vim\autoload\pathogen.vim" "%APP_DIR%\vim-pathogen\autoload\pathogen.vim"
 
 

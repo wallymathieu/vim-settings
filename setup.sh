@@ -15,11 +15,6 @@ then
   ln -s $cwd/vimrc ~/.vimrc
 fi
 
-if [ ! -e $cwd/vim/autoload/pathogen.vim ]
-then
-  ln -s $cwd/vim-pathogen/autoload/pathogen.vim $cwd/vim/autoload/pathogen.vim
-fi
-
 cd ~/.vim/bundle/omnisharp/server
 msbuild
 
