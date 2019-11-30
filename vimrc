@@ -9,9 +9,9 @@ if WINDOWS()
 endif
 
 if WINDOWS() " Keep swap files in one location
-  set directory=$HOME/.vim/tmp//    
+  set directory=$HOME/.vim/tmp//
 else
-  set directory=~/.vim/tmp//    
+  set directory=~/.vim/tmp//
 endif
 
 
@@ -19,7 +19,7 @@ endif
 set showmode                      " Display the mode you're in.
 set expandtab                     " Use spaces instead of tabs
 if ! WINDOWS()
-  colorscheme vibrantink 
+  colorscheme vibrantink
 endif
 syntax on
 set showcmd                       " Display incomplete commands.
@@ -39,8 +39,8 @@ set ts=2                          " Tab size 2
 if WINDOWS()
   " let g:ruby_path = ':C:\tools\ruby213\bin'
   let g:FindFileIgnore = ['*.o', '*.pyc', '*/tmp/*', '*.dll', '*.exe', '*.png']
-endif 
-set relativenumber 
+endif
+set relativenumber
 
 " Line numbers
 autocmd FocusLost * :set number
