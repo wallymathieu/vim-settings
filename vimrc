@@ -61,7 +61,7 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
-
+Plug 'lfe/vim-lfe'
 " (Optional) Multi-entry selection UI.
 Plug 'junegunn/fzf'
 Plug 'ionide/Ionide-vim', {
