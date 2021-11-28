@@ -69,9 +69,6 @@ Plug 'ionide/Ionide-vim', {
       \}
 Plug 'vim-syntastic/syntastic'
 call plug#end()
-let g:LanguageClient_serverCommands = {
-  \ 'fsharp': g:fsharp#languageserver_command
-  \ }
 " Nerd tree:
 map <F3> :NERDTreeToggle<CR>
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
