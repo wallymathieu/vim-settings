@@ -65,12 +65,13 @@ Plug 'lfe/vim-lfe'
 " (Optional) Multi-entry selection UI.
 Plug 'junegunn/fzf'
 Plug 'ionide/Ionide-vim', {
-      \ 'do':  'make fsautocomplete',
+      \ 'do':  'bash install.sh',
       \}
 Plug 'vim-syntastic/syntastic'
 call plug#end()
 " Nerd tree:
 map <F3> :NERDTreeToggle<CR>
+map <F4> :FZF<CR>
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 " Or map each action separately
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
