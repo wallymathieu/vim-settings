@@ -71,7 +71,8 @@ Plug 'vim-syntastic/syntastic'
 call plug#end()
 " Nerd tree:
 map <F3> :NERDTreeToggle<CR>
-map <F4> :FZF<CR>
+nnoremap <F4> :set hlsearch!<CR>
+map <S-F4> :FZF<CR>
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 " Or map each action separately
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
